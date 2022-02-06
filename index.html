@@ -2,45 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <header class="viewport-header"> 
-            <h1 class="header">Weather Dashboard</h1>
+
+    <header class="container-fluid">
+        <div class="row navbar navbar-dark bg-dark">
+            <div class="col-12 text-center text-color-light">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
     </header>
 
-    <main class="row justify-space-between">
+    <main>
 
-        <div class="col-12 col-md-4 col-lg-3">
-            <div class="search">
-                <h2>Search for a City:</h2>
-                <form id="search-bar">
-                    <input name="city" id="city" type="text" placeholder="Enter City Name Here" />
-                    <button type="submit" id="search-btn" class="btn btn-primary btn-sm">Search</button>
-                </form>
-            </div>   
-        </div>
+        <section>
+            <h1>Search Bar</h1>
+        </section>
 
-        <div class="">
-            <div class="card">
-                <h3 class="card-title"></h3>
-                <ul class="weather" id="city-weather">
-                    <li>Temperature:</li>
-                    <li>Wind Speed:</li>
-                    <li>Humidity:</li>
-                    <li>UV Index</li>
-                </ul>
-            </div>
-        </div>
+        <section>
+            <h1>Weather Conditions Container</h1>
+            <!-- adppend Current Weather here -->
+        </section>
 
-        <div class="">
-            <div class="row">
-                <h3>5-Day Forecast</h3>
-            </div>
-        </div>
+        <secion>
+            <h1>5-Day Forecast Container</h1>
+            <!-- append 5-day Forecast here -->
+        </secion>
     </main>
 </body>
-</html>

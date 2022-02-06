@@ -12,17 +12,26 @@
 <body>
 
     <header class="container-fluid">
-        <div class="row navbar navbar-dark bg-dark">
-            <div class="col-12 text-center text-color-light">
-                <h1>Weather Dashboard</h1>
+        <div class="row navbar narbbar-dark bg-primary">
+            <div class="col-12 text-center">
+                <h1 class="font-weight-bold text-white">Weather Dashboard</h1>
             </div>
         </div>
     </header>
 
     <main>
 
-        <section>
-            <h1>Search Bar</h1>
+        <section class="row">
+            <div class="col-3 bg-light pb-2 pt-3" id="Search-Container">
+                <div class="row col-12">
+                    <h4>Search for a City:</h4>
+                </div>
+
+                <div class="row col-12">
+                    <input class="form-control" type="text" id="Seach-Bar" placeholder="Enter Current City">
+                    <button class="btn btn-primary" type="button" id="Search-Btn">Search</button>
+                </div>
+            </div>      
         </section>
 
         <section>

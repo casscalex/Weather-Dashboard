@@ -1,21 +1,15 @@
-
 // request access to the api
-function getApi() {
+var requestUrl = "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=857c5b74ba837e515c35fc82b13067c6"
 
-    var requestUrl = "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=857c5b74ba837e515c35fc82b13067c6"
-
-    fetch(requestUrl)
-        .then(function(response) {
+fetch(requestUrl)
+    .then(function(response) {
             return response.json();
-        })
-        .then(function(data) {
+    })
+    .then(function(data) {
             console.log(data);
-        });
-}
+    });
 
-getApi();
-
-// return values for weather forecast
+// // return values for weather forecast
 var temp = document.querySelector("main.temp");
 var wind = document.querySelector("wind.speed");
 var humid = document.querySelector("main.humidity");

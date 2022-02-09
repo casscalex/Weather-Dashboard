@@ -21,8 +21,8 @@
 
     <main>
 
-        <section class="row">
-            <div class="col-3 bg-light pb-2 pt-3" id="Search-Container">
+        <section class="row" id="Search-Container">
+            <div class="col-3 bg-light pb-2 pt-3">
                 <div class="row col-12">
                     <h4>Search for a City:</h4>
                 </div>
@@ -44,9 +44,11 @@
 
         <section class="col-9 pb-4 pt-4" id="Weather-Container">
             <div class="row pb-3 mr-2 ml-2">
-                <div class="col-12 border px-3 py-3">
-                    <!-- append currentWeather here -->
-                    <h1>Current Weather Container</h1>
+                <div class="col-12 border px-3 py-3" id="City-Weather">
+                    <div id="Temp"></div>
+                    <div id="Wind"></div>
+                    <div id="Humidity"></div>
+                    <div id="UVI"></div>
                 </div>
             </div>
 
@@ -56,5 +58,8 @@
             <h1>5-Day Forecast Container</h1>
             <!-- append forecast here -->
         </secion>
+
     </main>
+
+    <script src="./script.js"></script>
 </body>
